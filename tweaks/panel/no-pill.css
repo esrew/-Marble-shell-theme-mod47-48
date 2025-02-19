@@ -1,0 +1,16 @@
+/* Remove additional background in panel buttons */
+
+.panel-button,
+.panel-button .clock, /* Date & clock */
+.clock-display StIcon { /* DND / new messages icon */
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.panel-button:hover,
+.panel-button:hover .clock,
+.panel-button:active,
+.panel-button:active .clock {
+	background-color: ACCENT-DISABLED_HOVER;
+    box-shadow: inset 0 0 0 1px BORDER-SHADOW;
+}
